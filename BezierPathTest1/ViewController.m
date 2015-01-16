@@ -9,16 +9,11 @@
 #import <UIBezierPathSerialization.h>
 #import "ViewController.h"
 
-#define CAPTURE_DEVICE_WIDTH 1314
-#define CAPTURE_DEVICE_HEIGHT 868
-
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -27,14 +22,16 @@
     
     self.sectionImages = @[@"sxn_0", @"sxn_1", @"sxn_2", @"sxn_3", @"sxn_4", @"sxn_5", @"sxn_6", @"sxn_7", @"sxn_8"];
     
-    self.backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    [self.backgroundImageView setBackgroundColor:[UIColor clearColor]];
-    [self.backgroundImageView setContentMode:UIViewContentModeScaleAspectFit];
+    UIImage *sampleImage = [UIImage imageNamed:[self.sectionImages firstObject]];
+    
+    CGRect sxnFrame = CGRectMake(0, 0, self.view.bounds.size.width, (self.view.bounds.size.width/sampleImage.size.width) * sampleImage.size.height);
+    self.backgroundImageView = [[UIImageView alloc] initWithFrame:sxnFrame];
+    [self.backgroundImageView setContentMode:UIViewContentModeScaleToFill];
     
     [self.backgroundImageView setImage:[UIImage imageNamed:[self.sectionImages firstObject]]];
     [self.view addSubview:self.backgroundImageView];
     
-    self.drawView = [[BSDrawView alloc] initWithFrame:self.view.bounds];
+    self.drawView = [[BSDrawView alloc] initWithFrame:sxnFrame];
     [self.drawView setClosePathOnFingerLift:YES];
     [self.view addSubview:self.drawView];
     
@@ -62,7 +59,7 @@
 
 - (IBAction)saveAndSend:(id)sender
 {
-    CGFloat scaleFactor = CAPTURE_DEVICE_WIDTH/self.view.bounds.size.width;
+    CGFloat scaleFactor = self.backgroundImageView.image.size.width/self.view.bounds.size.width;
     
     UIBezierPath *scaledPath = [BSDrawView scaledPath:[self.drawView bezierPathFromAllPaths]
                                           scaleFactor:scaleFactor];
