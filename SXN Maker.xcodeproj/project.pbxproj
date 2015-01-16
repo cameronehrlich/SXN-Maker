@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		322F087A1617F08300F06ADA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322F08791617F08300F06ADA /* MessageUI.framework */; };
+		329E1D791A689B8200E9AB37 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329E1D781A689B8200E9AB37 /* BSDrawView.m */; };
 		32ADE71A16103E9A00F97F76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ADE71916103E9A00F97F76 /* UIKit.framework */; };
 		32ADE71C16103E9A00F97F76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ADE71B16103E9A00F97F76 /* Foundation.framework */; };
 		32ADE71E16103E9A00F97F76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ADE71D16103E9A00F97F76 /* CoreGraphics.framework */; };
@@ -19,41 +20,17 @@
 		32ADE73016103E9A00F97F76 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32ADE72F16103E9A00F97F76 /* Default-568h@2x.png */; };
 		32ADE73316103E9A00F97F76 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32ADE73116103E9A00F97F76 /* MainStoryboard.storyboard */; };
 		32ADE73616103E9A00F97F76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32ADE73516103E9A00F97F76 /* ViewController.m */; };
-		32ADE73E1610400F00F97F76 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32ADE73D1610400F00F97F76 /* MainView.m */; };
 		32ADE7511610CBF200F97F76 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ADE7501610CBF200F97F76 /* QuartzCore.framework */; };
-		32AF438B1A46425A0073B4F1 /* CNMethodGenerator.py in Resources */ = {isa = PBXBuildFile; fileRef = 32AF436E1A46425A0073B4F1 /* CNMethodGenerator.py */; };
-		32AF438C1A46425A0073B4F1 /* Cerebral Aqueduct7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43701A46425A0073B4F1 /* Cerebral Aqueduct7.xml */; };
-		32AF438D1A46425A0073B4F1 /* Cerebral Aqueduct8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43711A46425A0073B4F1 /* Cerebral Aqueduct8.xml */; };
-		32AF438E1A46425A0073B4F1 /* Cerebral Aqueduct9.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43721A46425A0073B4F1 /* Cerebral Aqueduct9.xml */; };
-		32AF438F1A46425A0073B4F1 /* Corticospinal Fibers3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43731A46425A0073B4F1 /* Corticospinal Fibers3.xml */; };
-		32AF43901A46425A0073B4F1 /* Fourth Ventricle3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43741A46425A0073B4F1 /* Fourth Ventricle3.xml */; };
-		32AF43911A46425A0073B4F1 /* Fourth Ventricle4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43751A46425A0073B4F1 /* Fourth Ventricle4.xml */; };
-		32AF43921A46425A0073B4F1 /* Inferior Vestibular Nucleus3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43761A46425A0073B4F1 /* Inferior Vestibular Nucleus3.xml */; };
-		32AF43931A46425A0073B4F1 /* Mesencephalic Nucleus5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43771A46425A0073B4F1 /* Mesencephalic Nucleus5.xml */; };
-		32AF43941A46425A0073B4F1 /* Middle Cerebellar Peduncle3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43781A46425A0073B4F1 /* Middle Cerebellar Peduncle3.xml */; };
-		32AF43951A46425A0073B4F1 /* Middle Cerebellar Peduncle4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43791A46425A0073B4F1 /* Middle Cerebellar Peduncle4.xml */; };
-		32AF43961A46425A0073B4F1 /* MLF5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF437A1A46425A0073B4F1 /* MLF5.xml */; };
-		32AF43971A46425A0073B4F1 /* Motor Nucleus of Vagus1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF437B1A46425A0073B4F1 /* Motor Nucleus of Vagus1.xml */; };
-		32AF43981A46425A0073B4F1 /* Optic Tract7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF437C1A46425A0073B4F1 /* Optic Tract7.xml */; };
-		32AF43991A46425A0073B4F1 /* Pariaqueductal Grey5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF437D1A46425A0073B4F1 /* Pariaqueductal Grey5.xml */; };
-		32AF439A1A46425A0073B4F1 /* Pariaqueductal Grey6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF437E1A46425A0073B4F1 /* Pariaqueductal Grey6.xml */; };
-		32AF439B1A46425A0073B4F1 /* Pariaqueductal Grey7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF437F1A46425A0073B4F1 /* Pariaqueductal Grey7.xml */; };
-		32AF439C1A46425A0073B4F1 /* Principle Sensory Nucleus5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43801A46425A0073B4F1 /* Principle Sensory Nucleus5.xml */; };
-		32AF439D1A46425A0073B4F1 /* Solitary Nucleus1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43811A46425A0073B4F1 /* Solitary Nucleus1.xml */; };
-		32AF439E1A46425A0073B4F1 /* Solitary Nucleus2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43821A46425A0073B4F1 /* Solitary Nucleus2.xml */; };
-		32AF439F1A46425A0073B4F1 /* Solitary Tract1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43831A46425A0073B4F1 /* Solitary Tract1.xml */; };
-		32AF43A01A46425A0073B4F1 /* Solitary Tract2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43841A46425A0073B4F1 /* Solitary Tract2.xml */; };
-		32AF43A11A46425A0073B4F1 /* Spinal Trigeminal Nucleus3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43851A46425A0073B4F1 /* Spinal Trigeminal Nucleus3.xml */; };
-		32AF43A21A46425A0073B4F1 /* Spinal Trigeminal Tract3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43861A46425A0073B4F1 /* Spinal Trigeminal Tract3.xml */; };
-		32AF43A31A46425A0073B4F1 /* Superior Cerebellar Peduncle5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43871A46425A0073B4F1 /* Superior Cerebellar Peduncle5.xml */; };
-		32AF43A41A46425A0073B4F1 /* Superior Cerebellar Peduncle7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43881A46425A0073B4F1 /* Superior Cerebellar Peduncle7.xml */; };
-		32AF43A51A46425A0073B4F1 /* Trigeminal Motor Nucleus4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF43891A46425A0073B4F1 /* Trigeminal Motor Nucleus4.xml */; };
-		32AF43A61A46425A0073B4F1 /* Trigeminal Motor Nucleus5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32AF438A1A46425A0073B4F1 /* Trigeminal Motor Nucleus5.xml */; };
 		32E415401929663E0025568B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E4153F1929663E0025568B /* Images.xcassets */; };
+		FE607C7A07483C7C95501C0D /* libPods-SXN Maker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC86FD8BBEBDD0880377E669 /* libPods-SXN Maker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146AB03B522A5F2814DEC989 /* Pods-SXN Maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SXN Maker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SXN Maker/Pods-SXN Maker.debug.xcconfig"; sourceTree = "<group>"; };
+		1AABFAA8AC83C6F9712A53FC /* Pods-SXN Maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SXN Maker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SXN Maker/Pods-SXN Maker.release.xcconfig"; sourceTree = "<group>"; };
 		322F08791617F08300F06ADA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		329E1D771A689B8200E9AB37 /* BSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawView.h; sourceTree = "<group>"; };
+		329E1D781A689B8200E9AB37 /* BSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawView.m; sourceTree = "<group>"; };
 		32ADE71516103E9A00F97F76 /* SXN Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SXN Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32ADE71916103E9A00F97F76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		32ADE71B16103E9A00F97F76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,38 +47,9 @@
 		32ADE73216103E9A00F97F76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		32ADE73416103E9A00F97F76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		32ADE73516103E9A00F97F76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		32ADE73C1610400F00F97F76 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
-		32ADE73D1610400F00F97F76 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		32ADE7501610CBF200F97F76 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		32AF436E1A46425A0073B4F1 /* CNMethodGenerator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = CNMethodGenerator.py; path = BezierPathTest1/CNMethodGenerator.py; sourceTree = "<group>"; };
-		32AF43701A46425A0073B4F1 /* Cerebral Aqueduct7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Cerebral Aqueduct7.xml"; sourceTree = "<group>"; };
-		32AF43711A46425A0073B4F1 /* Cerebral Aqueduct8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Cerebral Aqueduct8.xml"; sourceTree = "<group>"; };
-		32AF43721A46425A0073B4F1 /* Cerebral Aqueduct9.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Cerebral Aqueduct9.xml"; sourceTree = "<group>"; };
-		32AF43731A46425A0073B4F1 /* Corticospinal Fibers3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Corticospinal Fibers3.xml"; sourceTree = "<group>"; };
-		32AF43741A46425A0073B4F1 /* Fourth Ventricle3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Fourth Ventricle3.xml"; sourceTree = "<group>"; };
-		32AF43751A46425A0073B4F1 /* Fourth Ventricle4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Fourth Ventricle4.xml"; sourceTree = "<group>"; };
-		32AF43761A46425A0073B4F1 /* Inferior Vestibular Nucleus3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Inferior Vestibular Nucleus3.xml"; sourceTree = "<group>"; };
-		32AF43771A46425A0073B4F1 /* Mesencephalic Nucleus5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Mesencephalic Nucleus5.xml"; sourceTree = "<group>"; };
-		32AF43781A46425A0073B4F1 /* Middle Cerebellar Peduncle3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Middle Cerebellar Peduncle3.xml"; sourceTree = "<group>"; };
-		32AF43791A46425A0073B4F1 /* Middle Cerebellar Peduncle4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Middle Cerebellar Peduncle4.xml"; sourceTree = "<group>"; };
-		32AF437A1A46425A0073B4F1 /* MLF5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MLF5.xml; sourceTree = "<group>"; };
-		32AF437B1A46425A0073B4F1 /* Motor Nucleus of Vagus1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Motor Nucleus of Vagus1.xml"; sourceTree = "<group>"; };
-		32AF437C1A46425A0073B4F1 /* Optic Tract7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Optic Tract7.xml"; sourceTree = "<group>"; };
-		32AF437D1A46425A0073B4F1 /* Pariaqueductal Grey5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Pariaqueductal Grey5.xml"; sourceTree = "<group>"; };
-		32AF437E1A46425A0073B4F1 /* Pariaqueductal Grey6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Pariaqueductal Grey6.xml"; sourceTree = "<group>"; };
-		32AF437F1A46425A0073B4F1 /* Pariaqueductal Grey7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Pariaqueductal Grey7.xml"; sourceTree = "<group>"; };
-		32AF43801A46425A0073B4F1 /* Principle Sensory Nucleus5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Principle Sensory Nucleus5.xml"; sourceTree = "<group>"; };
-		32AF43811A46425A0073B4F1 /* Solitary Nucleus1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Solitary Nucleus1.xml"; sourceTree = "<group>"; };
-		32AF43821A46425A0073B4F1 /* Solitary Nucleus2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Solitary Nucleus2.xml"; sourceTree = "<group>"; };
-		32AF43831A46425A0073B4F1 /* Solitary Tract1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Solitary Tract1.xml"; sourceTree = "<group>"; };
-		32AF43841A46425A0073B4F1 /* Solitary Tract2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Solitary Tract2.xml"; sourceTree = "<group>"; };
-		32AF43851A46425A0073B4F1 /* Spinal Trigeminal Nucleus3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Spinal Trigeminal Nucleus3.xml"; sourceTree = "<group>"; };
-		32AF43861A46425A0073B4F1 /* Spinal Trigeminal Tract3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Spinal Trigeminal Tract3.xml"; sourceTree = "<group>"; };
-		32AF43871A46425A0073B4F1 /* Superior Cerebellar Peduncle5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Superior Cerebellar Peduncle5.xml"; sourceTree = "<group>"; };
-		32AF43881A46425A0073B4F1 /* Superior Cerebellar Peduncle7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Superior Cerebellar Peduncle7.xml"; sourceTree = "<group>"; };
-		32AF43891A46425A0073B4F1 /* Trigeminal Motor Nucleus4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Trigeminal Motor Nucleus4.xml"; sourceTree = "<group>"; };
-		32AF438A1A46425A0073B4F1 /* Trigeminal Motor Nucleus5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Trigeminal Motor Nucleus5.xml"; sourceTree = "<group>"; };
 		32E4153F1929663E0025568B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "SXN Maker/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		FC86FD8BBEBDD0880377E669 /* libPods-SXN Maker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SXN Maker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +62,7 @@
 				32ADE71A16103E9A00F97F76 /* UIKit.framework in Frameworks */,
 				32ADE71C16103E9A00F97F76 /* Foundation.framework in Frameworks */,
 				32ADE71E16103E9A00F97F76 /* CoreGraphics.framework in Frameworks */,
+				FE607C7A07483C7C95501C0D /* libPods-SXN Maker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,10 +72,10 @@
 		32ADE70A16103E9A00F97F76 = {
 			isa = PBXGroup;
 			children = (
-				32AF436D1A463F110073B4F1 /* XML and Generator */,
 				32ADE71F16103E9A00F97F76 /* SXN Maker */,
 				32ADE71816103E9A00F97F76 /* Frameworks */,
 				32ADE71616103E9A00F97F76 /* Products */,
+				7D4931D5718B12BE4FFFB35E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +95,7 @@
 				32ADE71916103E9A00F97F76 /* UIKit.framework */,
 				32ADE71B16103E9A00F97F76 /* Foundation.framework */,
 				32ADE71D16103E9A00F97F76 /* CoreGraphics.framework */,
+				FC86FD8BBEBDD0880377E669 /* libPods-SXN Maker.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,10 +106,10 @@
 				32ADE73116103E9A00F97F76 /* MainStoryboard.storyboard */,
 				32ADE72816103E9A00F97F76 /* AppDelegate.h */,
 				32ADE72916103E9A00F97F76 /* AppDelegate.m */,
-				32ADE73C1610400F00F97F76 /* MainView.h */,
-				32ADE73D1610400F00F97F76 /* MainView.m */,
 				32ADE73416103E9A00F97F76 /* ViewController.h */,
 				32ADE73516103E9A00F97F76 /* ViewController.m */,
+				329E1D771A689B8200E9AB37 /* BSDrawView.h */,
+				329E1D781A689B8200E9AB37 /* BSDrawView.m */,
 				32E4153F1929663E0025568B /* Images.xcassets */,
 				32ADE72016103E9A00F97F76 /* Supporting Files */,
 			);
@@ -181,48 +131,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		32AF436D1A463F110073B4F1 /* XML and Generator */ = {
+		7D4931D5718B12BE4FFFB35E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32AF436E1A46425A0073B4F1 /* CNMethodGenerator.py */,
-				32AF436F1A46425A0073B4F1 /* tempXML */,
+				146AB03B522A5F2814DEC989 /* Pods-SXN Maker.debug.xcconfig */,
+				1AABFAA8AC83C6F9712A53FC /* Pods-SXN Maker.release.xcconfig */,
 			);
-			name = "XML and Generator";
-			sourceTree = "<group>";
-		};
-		32AF436F1A46425A0073B4F1 /* tempXML */ = {
-			isa = PBXGroup;
-			children = (
-				32AF43701A46425A0073B4F1 /* Cerebral Aqueduct7.xml */,
-				32AF43711A46425A0073B4F1 /* Cerebral Aqueduct8.xml */,
-				32AF43721A46425A0073B4F1 /* Cerebral Aqueduct9.xml */,
-				32AF43731A46425A0073B4F1 /* Corticospinal Fibers3.xml */,
-				32AF43741A46425A0073B4F1 /* Fourth Ventricle3.xml */,
-				32AF43751A46425A0073B4F1 /* Fourth Ventricle4.xml */,
-				32AF43761A46425A0073B4F1 /* Inferior Vestibular Nucleus3.xml */,
-				32AF43771A46425A0073B4F1 /* Mesencephalic Nucleus5.xml */,
-				32AF43781A46425A0073B4F1 /* Middle Cerebellar Peduncle3.xml */,
-				32AF43791A46425A0073B4F1 /* Middle Cerebellar Peduncle4.xml */,
-				32AF437A1A46425A0073B4F1 /* MLF5.xml */,
-				32AF437B1A46425A0073B4F1 /* Motor Nucleus of Vagus1.xml */,
-				32AF437C1A46425A0073B4F1 /* Optic Tract7.xml */,
-				32AF437D1A46425A0073B4F1 /* Pariaqueductal Grey5.xml */,
-				32AF437E1A46425A0073B4F1 /* Pariaqueductal Grey6.xml */,
-				32AF437F1A46425A0073B4F1 /* Pariaqueductal Grey7.xml */,
-				32AF43801A46425A0073B4F1 /* Principle Sensory Nucleus5.xml */,
-				32AF43811A46425A0073B4F1 /* Solitary Nucleus1.xml */,
-				32AF43821A46425A0073B4F1 /* Solitary Nucleus2.xml */,
-				32AF43831A46425A0073B4F1 /* Solitary Tract1.xml */,
-				32AF43841A46425A0073B4F1 /* Solitary Tract2.xml */,
-				32AF43851A46425A0073B4F1 /* Spinal Trigeminal Nucleus3.xml */,
-				32AF43861A46425A0073B4F1 /* Spinal Trigeminal Tract3.xml */,
-				32AF43871A46425A0073B4F1 /* Superior Cerebellar Peduncle5.xml */,
-				32AF43881A46425A0073B4F1 /* Superior Cerebellar Peduncle7.xml */,
-				32AF43891A46425A0073B4F1 /* Trigeminal Motor Nucleus4.xml */,
-				32AF438A1A46425A0073B4F1 /* Trigeminal Motor Nucleus5.xml */,
-			);
-			name = tempXML;
-			path = BezierPathTest1/tempXML;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32ADE73916103E9A00F97F76 /* Build configuration list for PBXNativeTarget "SXN Maker" */;
 			buildPhases = (
+				BD3ABEFA6B9DC1AACE6DBD55 /* Check Pods Manifest.lock */,
 				32ADE71116103E9A00F97F76 /* Sources */,
 				32ADE71216103E9A00F97F76 /* Frameworks */,
 				32ADE71316103E9A00F97F76 /* Resources */,
+				8D27F51FE1AF1887A0A219AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,44 +198,49 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AF438C1A46425A0073B4F1 /* Cerebral Aqueduct7.xml in Resources */,
-				32AF43A21A46425A0073B4F1 /* Spinal Trigeminal Tract3.xml in Resources */,
-				32AF43A51A46425A0073B4F1 /* Trigeminal Motor Nucleus4.xml in Resources */,
-				32AF43A11A46425A0073B4F1 /* Spinal Trigeminal Nucleus3.xml in Resources */,
-				32AF439A1A46425A0073B4F1 /* Pariaqueductal Grey6.xml in Resources */,
-				32AF439C1A46425A0073B4F1 /* Principle Sensory Nucleus5.xml in Resources */,
-				32AF43991A46425A0073B4F1 /* Pariaqueductal Grey5.xml in Resources */,
-				32AF439B1A46425A0073B4F1 /* Pariaqueductal Grey7.xml in Resources */,
-				32AF43961A46425A0073B4F1 /* MLF5.xml in Resources */,
-				32AF439D1A46425A0073B4F1 /* Solitary Nucleus1.xml in Resources */,
-				32AF43941A46425A0073B4F1 /* Middle Cerebellar Peduncle3.xml in Resources */,
-				32AF43951A46425A0073B4F1 /* Middle Cerebellar Peduncle4.xml in Resources */,
-				32AF438B1A46425A0073B4F1 /* CNMethodGenerator.py in Resources */,
-				32AF43921A46425A0073B4F1 /* Inferior Vestibular Nucleus3.xml in Resources */,
-				32AF43971A46425A0073B4F1 /* Motor Nucleus of Vagus1.xml in Resources */,
-				32AF439F1A46425A0073B4F1 /* Solitary Tract1.xml in Resources */,
-				32AF438E1A46425A0073B4F1 /* Cerebral Aqueduct9.xml in Resources */,
-				32AF43A31A46425A0073B4F1 /* Superior Cerebellar Peduncle5.xml in Resources */,
-				32AF43901A46425A0073B4F1 /* Fourth Ventricle3.xml in Resources */,
-				32AF43911A46425A0073B4F1 /* Fourth Ventricle4.xml in Resources */,
-				32AF43A41A46425A0073B4F1 /* Superior Cerebellar Peduncle7.xml in Resources */,
-				32AF438F1A46425A0073B4F1 /* Corticospinal Fibers3.xml in Resources */,
-				32AF43A01A46425A0073B4F1 /* Solitary Tract2.xml in Resources */,
-				32AF438D1A46425A0073B4F1 /* Cerebral Aqueduct8.xml in Resources */,
 				32ADE72416103E9A00F97F76 /* InfoPlist.strings in Resources */,
-				32AF43A61A46425A0073B4F1 /* Trigeminal Motor Nucleus5.xml in Resources */,
-				32AF439E1A46425A0073B4F1 /* Solitary Nucleus2.xml in Resources */,
 				32E415401929663E0025568B /* Images.xcassets in Resources */,
 				32ADE72C16103E9A00F97F76 /* Default.png in Resources */,
-				32AF43981A46425A0073B4F1 /* Optic Tract7.xml in Resources */,
 				32ADE72E16103E9A00F97F76 /* Default@2x.png in Resources */,
-				32AF43931A46425A0073B4F1 /* Mesencephalic Nucleus5.xml in Resources */,
 				32ADE73016103E9A00F97F76 /* Default-568h@2x.png in Resources */,
 				32ADE73316103E9A00F97F76 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D27F51FE1AF1887A0A219AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SXN Maker/Pods-SXN Maker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD3ABEFA6B9DC1AACE6DBD55 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32ADE71116103E9A00F97F76 /* Sources */ = {
@@ -328,7 +250,7 @@
 				32ADE72616103E9A00F97F76 /* main.m in Sources */,
 				32ADE72A16103E9A00F97F76 /* AppDelegate.m in Sources */,
 				32ADE73616103E9A00F97F76 /* ViewController.m in Sources */,
-				32ADE73E1610400F00F97F76 /* MainView.m in Sources */,
+				329E1D791A689B8200E9AB37 /* BSDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +300,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "SXN Maker";
 				PROVISIONING_PROFILE = "9DC16373-2A1E-4F3F-B0E1-A82843E5E86F";
@@ -404,7 +326,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "SXN Maker";
 				PROVISIONING_PROFILE = "9DC16373-2A1E-4F3F-B0E1-A82843E5E86F";
@@ -416,6 +338,7 @@
 		};
 		32ADE73A16103E9A00F97F76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 146AB03B522A5F2814DEC989 /* Pods-SXN Maker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -424,6 +347,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BezierPathTest1/SXN Maker-Prefix.pch";
 				INFOPLIST_FILE = "BezierPathTest1/SXN Maker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "SXN Maker";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -432,6 +356,7 @@
 		};
 		32ADE73B16103E9A00F97F76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AABFAA8AC83C6F9712A53FC /* Pods-SXN Maker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -440,6 +365,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BezierPathTest1/SXN Maker-Prefix.pch";
 				INFOPLIST_FILE = "BezierPathTest1/SXN Maker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "SXN Maker";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

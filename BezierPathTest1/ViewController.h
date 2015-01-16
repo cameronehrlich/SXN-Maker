@@ -8,12 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import "BSDrawView.h"
 
 @interface ViewController : UIViewController<MFMailComposeViewControllerDelegate, UINavigationControllerDelegate>
-@property (strong, nonatomic) IBOutlet UILabel *lineWidthLabel;
+
 @property (strong, nonatomic) IBOutlet UILabel *currentImageLabel;
 @property (strong, nonatomic) IBOutlet UIStepper *stepper;
-@property (strong, nonatomic) IBOutlet UISwitch *closePathSwitch;
-@property (strong, nonatomic) IBOutlet UITextField *nameAndTypeField;
+@property (strong, nonatomic) IBOutlet UIButton *clearButton;
+@property (strong, nonatomic) IBOutlet UIButton *undoButton;
+@property (strong, nonatomic) IBOutlet UIButton *sendButton;
+
+@property (strong, nonatomic) UIImageView *backgroundImageView;
+@property (strong, nonatomic) BSDrawView *drawView;
+
+@property (strong, nonatomic) NSArray *sectionImages;
 
 @end
