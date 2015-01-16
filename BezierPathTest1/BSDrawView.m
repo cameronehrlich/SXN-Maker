@@ -140,6 +140,15 @@
     return [UIBezierPath bezierPathWithCGPath:summedPath];
 }
 
++ (UIBezierPath *)scaledPath:(UIBezierPath *)path scaleFactor:(CGFloat)scaleFactor
+{
+    CGAffineTransform transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
+    CGPathRef intermediatePath = CGPathCreateCopyByTransformingPath(path.CGPath, &transform);
+    path.CGPath = intermediatePath;
+    CGPathRelease(intermediatePath);
+    return path;
+}
+
 - (void)drawRect:(CGRect)rect
 {
     [[UIColor clearColor] set];

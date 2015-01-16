@@ -9,6 +9,9 @@
 #import <UIBezierPathSerialization.h>
 #import "ViewController.h"
 
+#define CAPTURE_DEVICE_WIDTH 1314
+#define CAPTURE_DEVICE_HEIGHT 868
+
 @implementation ViewController
 
 - (void)viewDidLoad
@@ -59,8 +62,12 @@
 
 - (IBAction)saveAndSend:(id)sender
 {
+    CGFloat scaleFactor = CAPTURE_DEVICE_WIDTH/self.view.bounds.size.width;
+    
+    UIBezierPath *scaledPath = [BSDrawView scaledPath:[self.drawView bezierPathFromAllPaths]
+                                          scaleFactor:scaleFactor];
     NSError *error;
-    NSData *pathData = [UIBezierPathSerialization dataWithBezierPath:[self.drawView bezierPathFromAllPaths]
+    NSData *pathData = [UIBezierPathSerialization dataWithBezierPath:scaledPath
                                                              options:0
                                                                error:&error];
     if (error) {
@@ -70,8 +77,8 @@
     MFMailComposeViewController *email = [[MFMailComposeViewController alloc] init];
     [email setMailComposeDelegate:self];
     [email setToRecipients:@[@"brainstem101app@gmail.com", @"cameronehrlich@gmail.com"]];
-    double sectionNumber = [self.stepper value];
-    [email addAttachmentData:pathData mimeType:@"application/json" fileName:[NSString stringWithFormat:@"name-type-%d.json", (int)sectionNumber]];
+    int sectionNumber = (int)[self.stepper value];
+    [email addAttachmentData:pathData mimeType:@"application/json" fileName:[NSString stringWithFormat:@"name-type-%d.json", sectionNumber]];
     [self presentViewController:email animated:YES completion:nil];
     
 }

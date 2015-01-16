@@ -20,5 +20,6 @@
 - (void)undo;
 - (void)clear;
 - (UIBezierPath *)bezierPathFromAllPaths;
++ (UIBezierPath *)scaledPath:(UIBezierPath *)path scaleFactor:(CGFloat)scaleFactor;
 
 @end
