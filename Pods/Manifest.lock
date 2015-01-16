@@ -1,0 +1,10 @@
+PODS:
+  - UIBezierPathSerialization (1.0.0)
+
+DEPENDENCIES:
+  - UIBezierPathSerialization (~> 1.0)
+
+SPEC CHECKSUMS:
+  UIBezierPathSerialization: 2a790dd5e76848e0829cd064714deba263f76c6c
+
+COCOAPODS: 0.35.0
